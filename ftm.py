@@ -113,7 +113,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def main():
     # Get the bot token from the environment variables
-    TOKEN = os.getenv('7401708143:AAGG3RTL54BxSZogp_hof94xe2Dx57_wZqw')
+    TOKEN = '7401708143:AAGG3RTL54BxSZogp_hof94xe2Dx57_wZqw' #Now Deploy 
 
     # Initialize the bot
     application = ApplicationBuilder().token(TOKEN).build()
