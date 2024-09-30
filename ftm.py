@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import yt_dlp
 
 # Replace with your channel username
-CHANNEL_USERNAME = '@ftmmovieskiduniya'
+CHANNEL_USERNAME = 'TOMO_MEDIA'
 
 # Function to check if the user is a member of the specified channel
 async def is_user_member(update: Update) -> bool:
@@ -26,7 +26,7 @@ def progress_hook(d):
 
 # Progress bar template
 PROGRESS_BAR = (
-    "╭━━━━❰ TEAM FTM DOWNLOADING..... ❱━➣\n"
+    "╭━━━━❰ TOMO MEDIA DOWNLOADING..... ❱━➣\n"
     "┣⪼ 🗂️ : {downloaded_bytes} | {total_size} ( file size downloaded )\n"
     "┣⪼ ⏳️ : {percent}% ( percentage downloaded )\n"
     "┣⪼ 🚀 : {speed}/s  ( download speed )\n"
@@ -50,8 +50,8 @@ def download_video(url, download_path='downloads/'):
             file_size = info_dict.get('filesize', 0) or info_dict.get('filesize_approx', 0)  # Get file size
 
         # Customize the filename
-        custom_filename = f"@ftmdeveloperz {video_title} 📥 Uᴘʟᴏᴀᴅᴇᴅ Bʏ @ftmmovieskiduniya 🚀\n" \
-                          "🔧 Rɪᴘᴘᴇᴅ Bʏ @FTMDEVELOPER 💾\n" \
+        custom_filename = f"@TOMO_ROLEX {video_title} 📥 Uᴘʟᴏᴀᴅᴇᴅ Bʏ @TOMO_MEDIA 🚀\n" \
+                          "🔧 Rɪᴘᴘᴇᴅ Bʏ @TOMO_ROLEX 💾\n" \
                           "⚠️ Dɪsᴄʟᴀɪᴍᴇʀ: Tʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 𝟷𝟶 ᴍɪɴᴜᴛᴇs, sᴏ ᴘʟᴇᴀsᴇ ғᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs. ⏳"
 
         # Define final output path with the custom name
@@ -113,7 +113,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def main():
     # Get the bot token from the environment variables
-    TOKEN = '7401708143:AAGG3RTL54BxSZogp_hof94xe2Dx57_wZqw' #Now Deploy 
+    TOKEN = '7732541736:AAGys76TCjDyOxSpBFaufkoJXnEgoB_uEs0' #Now Deploy 
 
     # Initialize the bot
     application = ApplicationBuilder().token(TOKEN).build()
